@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="id.handietron.aplikasichat.IsiChatActivity">
+
+	<com.rengwuxian.materialedittext.MaterialEditText
+		android:id="@+id/namaorang"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Nama Pengguna"
+		android:inputType="text"
+		app:met_floatingLabel="highlight"
+		app:met_floatingLabelText="Nama Pengguna"
+		android:layout_alignParentTop="true"
+		android:layout_alignLeft="@+id/isiChat"
+		android:layout_alignStart="@+id/isiChat" />
+
+	<com.rengwuxian.materialedittext.MaterialEditText
+		android:id="@+id/isiChat"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_below="@+id/namaorang"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_margin="10dp"
+		android:layout_marginBottom="19dp"
+		android:hint="Isi Konten"
+		android:inputType="text"
+		app:met_floatingLabel="highlight"
+		app:met_floatingLabelText="Isi Konten"/>
+
+	<Button
+		android:id="@+id/refactor"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Kirim Pesan"
+		android:layout_below="@+id/isiChat"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true" />
+
+</RelativeLayout>
